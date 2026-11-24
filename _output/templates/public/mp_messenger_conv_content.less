@@ -1,0 +1,104 @@
+// ============================================================================
+// Messenger Conversations - Content & Message Elements
+// Developed by: AhmedBakr (MesterPerfect) - https://tecwindow.net
+// ============================================================================
+
+[data-template="conversation_view"]
+{
+	// --------------------------------------------------------------------------
+	// Sender identity: show username below avatar
+	// --------------------------------------------------------------------------
+	<xf:if is="property('mpConvShowSenderName')">
+		.message-userDetails
+		{
+			display: block;
+			visibility: visible;
+			text-align: center;
+			margin-top: 5px;
+
+			.message-name
+			{
+				font-size: 12px;
+				font-weight: 600;
+				line-height: 1.5;
+				margin: 0;
+			}
+		}
+	</xf:if>
+
+	// --------------------------------------------------------------------------
+	// Hide user titles and user banners
+	// --------------------------------------------------------------------------
+	<xf:if is="property('mpConvHideUserExtras')">
+		.message-userTitle,
+		.message-userBanner
+		{
+			display: none !important;
+		}
+	</xf:if>
+
+	// --------------------------------------------------------------------------
+	// Hide message signatures
+	// --------------------------------------------------------------------------
+	<xf:if is="property('mpConvHideSignatures')">
+		.message-signature
+		{
+			display: none !important;
+		}
+	</xf:if>
+
+	// --------------------------------------------------------------------------
+	// Restyled compact reactions bar
+	// --------------------------------------------------------------------------
+	<xf:if is="property('mpConvRestyleReactions')">
+		.reactionsBar
+		{
+			display: inline-flex;
+			width: fit-content;
+			max-width: 100%;
+			margin-top: 8px;
+			padding: 4px 10px;
+			border: 1px solid @xf-borderColor;
+			border-radius: 8px;
+			background: @xf-contentAltBg;
+			box-sizing: border-box;
+		}
+	</xf:if>
+
+	// --------------------------------------------------------------------------
+	// Restyled quote blocks
+	// --------------------------------------------------------------------------
+	<xf:if is="property('mpConvRestyleQuotes')">
+		.bbCodeBlock--quote
+		{
+			background: @xf-contentAltBg;
+			border: 0;
+			border-right: 3px solid @xf-mpConvQuoteBorder;
+			border-radius: 8px;
+			overflow: hidden;
+			margin: 8px 0;
+
+			.bbCodeBlock-title
+			{
+				background: transparent;
+				border: 0;
+				color: @xf-textColorMuted;
+				padding: 6px 10px;
+			}
+
+			.bbCodeBlock-content
+			{
+				background: transparent;
+				border: 0;
+				padding: 8px 10px;
+			}
+		}
+
+		// Direction support: border-left on LTR, border-right on RTL
+		html[dir="ltr"] & .bbCodeBlock--quote
+		{
+			border-right: 0;
+			border-left: 3px solid @xf-mpConvQuoteBorder;
+		}
+	</xf:if>
+}

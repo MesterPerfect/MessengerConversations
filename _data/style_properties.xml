@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style_properties>
+  <style_property property_name="mpConvAttribution" group_name="mpMessengerConv" title="إظهار وقت وتاريخ الرسالة" description="إظهار أو إخفاء معلومات التاريخ والوقت ومؤشر [جديد]." property_type="value" value_type="boolean" has_variations="0" display_order="40">
+    <value>0</value>
+  </style_property>
+  <style_property property_name="mpConvBubbleRadius" group_name="mpMessengerConv" title="استدارة زوايا فقاعات الرسائل" description="درجة استدارة زوايا فقاعات الرسائل (مثال: 25px)." property_type="value" value_type="unit" has_variations="0" display_order="130">
+    <value>"25px"</value>
+  </style_property>
+  <style_property property_name="mpConvBubbleWidth" group_name="mpMessengerConv" title="عرض فقاعة الرسالة" description="الحد الأقصى لعرض فقاعة الرسالة (مثال: 80%)." property_type="value" value_type="string" has_variations="0" display_order="140">
+    <value>"80%"</value>
+  </style_property>
+  <style_property property_name="mpConvEnable" group_name="mpMessengerConv" title="تفعيل تصميم ماسنجر للمحادثات" description="تفعيل أو تعطيل تصميم الفقاعات وتنسيقات ماسنجر للمحادثات الخاصة." property_type="value" value_type="boolean" has_variations="0" display_order="10">
+    <value>0</value>
+  </style_property>
+  <style_property property_name="mpConvHideSignatures" group_name="mpMessengerConv" title="إخفاء التواقيع" description="إخفاء تواقيع الأعضاء داخل المحادثات الخاصة فقط." property_type="value" value_type="boolean" has_variations="0" display_order="90">
+    <value>1</value>
+  </style_property>
+  <style_property property_name="mpConvHideUserExtras" group_name="mpMessengerConv" title="إخفاء الرتب والشارات" description="إخفاء الرتب الإدارية والشارات (Admin/Mod) من رسائل المحادثة لمنع الازدحام." property_type="value" value_type="boolean" has_variations="0" display_order="80">
+    <value>1</value>
+  </style_property>
+  <style_property property_name="mpConvOnline" group_name="mpMessengerConv" title="إظهار مؤشر الاتصال" description="إظهار أو إخفاء نقطة مؤشر الاتصال بالإنترنت على الصور الشخصية." property_type="value" value_type="boolean" has_variations="0" display_order="50">
+    <value>1</value>
+  </style_property>
+  <style_property property_name="mpConvOtherBg" group_name="mpMessengerConv" title="لون خلفية رسائل المشاركين الآخرين" description="لون خلفية فقاعة رسائل بقية المشاركين (يدعم الوضع الفاتح والداكن تلقائيًا)." property_type="value" value_type="color" has_variations="1" display_order="160">
+    <value>{
+    "default": "@xf-contentHighlightBg"
+}</value>
+  </style_property>
+  <style_property property_name="mpConvPointer" group_name="mpMessengerConv" title="موضع زاوية فقاعة الرسالة" description="تحديد موضع السهم/الزاوية لفقاعات الرسائل (أعلى، أسفل، أو بدون زاوية)." property_type="value" value_type="radio" has_variations="0" display_order="60">
+    <value_parameters>top=أعلى (Top)
+bottom=أسفل (Bottom)
+none=بدون (None)</value_parameters>
+    <value>"none"</value>
+  </style_property>
+  <style_property property_name="mpConvQuoteBorder" group_name="mpMessengerConv" title="لون الحد الجانبي للاقتباس" description="لون الشريط الجانبي للاقتباسات داخل المحادثة." property_type="value" value_type="color" has_variations="1" display_order="170">
+    <value>{
+    "default": "@xf-paletteAccent1"
+}</value>
+  </style_property>
+  <style_property property_name="mpConvRestyleQuotes" group_name="mpMessengerConv" title="تخصيص شكل الاقتباسات" description="تخصيص الاقتباسات لتتناسب مع ألوان فقاعات الرسائل وخلفية المحادثة." property_type="value" value_type="boolean" has_variations="0" display_order="110">
+    <value>1</value>
+  </style_property>
+  <style_property property_name="mpConvRestyleReactions" group_name="mpMessengerConv" title="تحسين شكل التفاعلات" description="عرض شريط التفاعلات بحجم مدمج وأنيق وزوايا دائرية بدلاً من الشريط العريض." property_type="value" value_type="boolean" has_variations="0" display_order="100">
+    <value>1</value>
+  </style_property>
+  <style_property property_name="mpConvRestyleSidebar" group_name="mpMessengerConv" title="تخصيص ويدجات الشريط الجانبي" description="إعادة تصميم ويدجت معلومات المحادثة وويدجت المشاركين كبطاقات عصرية." property_type="value" value_type="boolean" has_variations="0" display_order="120">
+    <value>1</value>
+  </style_property>
+  <style_property property_name="mpConvSelfAvatar" group_name="mpMessengerConv" title="إظهار صورتك الشخصية" description="إظهار أو إخفاء صورتك الشخصية بجانب رسائلك." property_type="value" value_type="boolean" has_variations="0" display_order="30">
+    <value>0</value>
+  </style_property>
+  <style_property property_name="mpConvSelfBg" group_name="mpMessengerConv" title="لون خلفية رسائلك" description="لون خلفية فقاعة رسائلك (يدعم الوضع الفاتح والداكن تلقائيًا)." property_type="value" value_type="color" has_variations="1" display_order="150">
+    <value>{
+    "default": "@xf-contentBg"
+}</value>
+  </style_property>
+  <style_property property_name="mpConvSelfSide" group_name="mpMessengerConv" title="جهة ظهور رسائلك" description="تحديد جهة ظهور الرسائل الخاصة بك (يسار أو يمين)." property_type="value" value_type="radio" has_variations="0" display_order="20">
+    <value_parameters>left=يسار (Left)
+right=يمين (Right)</value_parameters>
+    <value>"left"</value>
+  </style_property>
+  <style_property property_name="mpConvShowSenderName" group_name="mpMessengerConv" title="إظهار اسم صاحب الرسالة" description="إظهار اسم المستخدم تحت الصورة الشخصية (مهم خصوصًا في المحادثات الجماعية)." property_type="value" value_type="boolean" has_variations="0" display_order="70">
+    <value>0</value>
+  </style_property>
+</style_properties>

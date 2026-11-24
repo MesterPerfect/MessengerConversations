@@ -1,0 +1,53 @@
+{
+    "mpConvAttribution.json": {
+        "hash": "9f1d118cb05547ec1a0dc8af707ca641"
+    },
+    "mpConvBubbleRadius.json": {
+        "hash": "6fff04ad4ea9bf72a4118e82523361e0"
+    },
+    "mpConvBubbleWidth.json": {
+        "hash": "08a56c7d54f7e864fe723dce454afac7"
+    },
+    "mpConvEnable.json": {
+        "hash": "77750f418af94898db564b144f4a3298"
+    },
+    "mpConvHideSignatures.json": {
+        "hash": "3fb77c6604618d06fc207982898c4261"
+    },
+    "mpConvHideUserExtras.json": {
+        "hash": "7ccdeea4bc9bed88258a142c27eefbfe"
+    },
+    "mpConvOnline.json": {
+        "hash": "5d9c3eb6d578173915114e31b1c25662"
+    },
+    "mpConvOtherBg.json": {
+        "hash": "1f181eb002c13f9c7d9e4abaf6377b0d"
+    },
+    "mpConvPointer.json": {
+        "hash": "7305b0b3f3fb4844abca4bcf73221dff"
+    },
+    "mpConvQuoteBorder.json": {
+        "hash": "0454f1131b9661be5d60f0a50e1afe4a"
+    },
+    "mpConvRestyleQuotes.json": {
+        "hash": "f3b55461f63b136a4fbd8d785690c3a9"
+    },
+    "mpConvRestyleReactions.json": {
+        "hash": "8f68304c15165b16e969652d3ad0e176"
+    },
+    "mpConvRestyleSidebar.json": {
+        "hash": "21c41472c478af377885f9a1b2e4ca6f"
+    },
+    "mpConvSelfAvatar.json": {
+        "hash": "d62f6ea125e624da59878b91bcc1214c"
+    },
+    "mpConvSelfBg.json": {
+        "hash": "d9fbc49a470b650fd3a8a865b356ee47"
+    },
+    "mpConvSelfSide.json": {
+        "hash": "90148d3b204c8ca6b5d60ae990f8052b"
+    },
+    "mpConvShowSenderName.json": {
+        "hash": "8efb97198450d5521fe5d48c65d59442"
+    }
+}

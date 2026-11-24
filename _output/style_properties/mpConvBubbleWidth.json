@@ -1,0 +1,14 @@
+{
+    "group_name": "mpMessengerConv",
+    "title": "\u0639\u0631\u0636 \u0641\u0642\u0627\u0639\u0629 \u0627\u0644\u0631\u0633\u0627\u0644\u0629",
+    "description": "\u0627\u0644\u062d\u062f \u0627\u0644\u0623\u0642\u0635\u0649 \u0644\u0639\u0631\u0636 \u0641\u0642\u0627\u0639\u0629 \u0627\u0644\u0631\u0633\u0627\u0644\u0629 (\u0645\u062b\u0627\u0644: 80%).",
+    "property_type": "value",
+    "css_components": [],
+    "value_type": "string",
+    "value_parameters": "",
+    "has_variations": false,
+    "depends_on": "",
+    "value_group": "",
+    "property_value": "80%",
+    "display_order": 140
+}

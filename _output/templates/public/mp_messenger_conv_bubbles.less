@@ -1,0 +1,252 @@
+// ============================================================================
+// Messenger Conversations - Message Bubbles & Layout
+// Developed by: AhmedBakr (MesterPerfect) - https://tecwindow.net
+// ============================================================================
+
+[data-template="conversation_view"]
+{
+	.block
+	{
+		.message
+		{
+			border-radius: @xf-mpConvBubbleRadius;
+
+			// Bubble width & spacing
+			&--conversationMessage
+			{
+				width: @xf-mpConvBubbleWidth;
+				margin-bottom: 12px;
+			}
+
+			// User cell column
+			&-cell--user
+			{
+				visibility: hidden;
+				border: none;
+				flex: 0 0 118px;
+			}
+
+			// Avatar container
+			&-avatar
+			{
+				visibility: visible;
+
+				&-wrapper
+				{
+					margin-bottom: 0;
+				}
+
+				<xf:if is="!property('mpConvOnline')">
+					&-online
+					{
+						display: none;
+					}
+				</xf:if>
+			}
+
+			// Hide user extras & message arrow
+			&-userExtras,
+			&-userArrow
+			{
+				display: none;
+			}
+
+			// Quick reply inherits bubble rounded corners
+			&--quickReply
+			{
+				border-radius: inherit;
+			}
+
+			// Date/time attribution & unread indicator
+			&-attribution
+			{
+				<xf:if is="!property('mpConvAttribution')">
+					display: none;
+				</xf:if>
+
+				border: none;
+
+				&-main
+				{
+					float: right;
+					margin-left: 4px;
+				}
+			}
+
+			// Message body margin reset
+			&-body
+			{
+				margin: 0;
+			}
+
+			// Own messages background
+			&.mp-conversation-message--self,
+			&.ctaConversationMessageSelf
+			{
+				background: @xf-mpConvSelfBg;
+
+				<xf:if is="!property('mpConvSelfAvatar')">
+					& .message-cell--user
+					{
+						display: none;
+					}
+				</xf:if>
+			}
+
+			// Other participants messages background
+			&.mp-conversation-message--other,
+			&.ctaConversationMessageOther
+			{
+				background: @xf-mpConvOtherBg;
+			}
+
+			// Mobile & tablet responsive styling
+			@media (max-width: @xf-responsiveMedium)
+			{
+				border-right: 1px solid @xf-borderColor;
+				border-left: 1px solid @xf-borderColor;
+
+				&-cell--user
+				{
+					padding-bottom: 0;
+				}
+
+				&-avatar .avatar
+				{
+					width: 32px;
+					height: 32px;
+					font-size: 20px;
+				}
+			}
+
+			// --------------------------------------------------------------
+			// Message alignment & bubble pointer
+			// --------------------------------------------------------------
+			<xf:if is="property('mpConvSelfSide') == 'right'">
+
+				// Own messages aligned to right
+				&.mp-conversation-message--self,
+				&.ctaConversationMessageSelf,
+				&--quickReply
+				{
+					margin-left: (100% - @xf-mpConvBubbleWidth);
+
+					& .message-inner
+					{
+						flex-direction: row-reverse;
+					}
+				}
+
+				&--quickReply
+				{
+					margin-left: 0;
+				}
+
+				@media (max-width: @xf-responsiveMedium)
+				{
+					&.mp-conversation-message--self,
+					&.ctaConversationMessageSelf,
+					&--quickReply
+					{
+						& .message-user
+						{
+							flex-direction: row-reverse;
+						}
+					}
+
+					&.mp-conversation-message--other .message-attribution-main,
+					&.ctaConversationMessageOther .message-attribution-main
+					{
+						float: left;
+						margin-left: 0;
+					}
+				}
+
+				// Pointer styling for right-aligned self
+				<xf:if is="property('mpConvPointer') == 'top'">
+					&.mp-conversation-message--self,
+					&.ctaConversationMessageSelf
+					{
+						border-top-right-radius: 0;
+					}
+
+					&.mp-conversation-message--other,
+					&.ctaConversationMessageOther
+					{
+						border-top-left-radius: 0;
+					}
+				<xf:elseif is="property('mpConvPointer') == 'bottom'" />
+					&.mp-conversation-message--self,
+					&.ctaConversationMessageSelf
+					{
+						border-bottom-right-radius: 0;
+					}
+
+					&.mp-conversation-message--other,
+					&.ctaConversationMessageOther
+					{
+						border-bottom-left-radius: 0;
+					}
+				</xf:if>
+
+			<xf:else />
+
+				// Own messages on left / Other participants on right
+				&.mp-conversation-message--other,
+				&.ctaConversationMessageOther
+				{
+					margin-left: (100% - @xf-mpConvBubbleWidth);
+
+					& .message-inner
+					{
+						flex-direction: row-reverse;
+					}
+				}
+
+				@media (max-width: @xf-responsiveMedium)
+				{
+					&.mp-conversation-message--self .message-attribution-main,
+					&.ctaConversationMessageSelf .message-attribution-main
+					{
+						float: left;
+						margin-left: 0;
+					}
+
+					&.mp-conversation-message--other .message-user,
+					&.ctaConversationMessageOther .message-user
+					{
+						flex-direction: row-reverse;
+					}
+				}
+
+				// Pointer styling for left-aligned self
+				<xf:if is="property('mpConvPointer') == 'top'">
+					&.mp-conversation-message--self,
+					&.ctaConversationMessageSelf
+					{
+						border-top-left-radius: 0;
+					}
+
+					&.mp-conversation-message--other,
+					&.ctaConversationMessageOther
+					{
+						border-top-right-radius: 0;
+					}
+				<xf:elseif is="property('mpConvPointer') == 'bottom'" />
+					&.mp-conversation-message--self,
+					&.ctaConversationMessageSelf
+					{
+						border-bottom-left-radius: 0;
+					}
+
+					&.mp-conversation-message--other,
+					&.ctaConversationMessageOther
+					{
+						border-bottom-right-radius: 0;
+					}
+				</xf:if>
+
+			</xf:if>
+		}
+	}
+}

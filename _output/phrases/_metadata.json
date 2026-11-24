@@ -1,0 +1,218 @@
+{
+    "style_prop.mpConvAttribution.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "a2cdc17bed62046376c9e42122d4c6f3"
+    },
+    "style_prop.mpConvBubbleRadius.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "62b5aa7bfaa70c6692e53faedf521f6e"
+    },
+    "style_prop.mpConvBubbleWidth.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "7ae3786fab59eb031c8038541f9fc706"
+    },
+    "style_prop.mpConvEnable.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "b8f52f022bbcf27c4fc48073d1cbb47a"
+    },
+    "style_prop.mpConvHideSignatures.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "1dbb79e01a0068af47c43c485702de08"
+    },
+    "style_prop.mpConvHideUserExtras.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "b0f959e9a15da6f30b89eda4a8964f34"
+    },
+    "style_prop.mpConvOnline.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "659f77ad0e08c5a9fa45a69d3f3e8005"
+    },
+    "style_prop.mpConvOtherBg.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "ee2a0a8bc42bb2360891b3573da690fb"
+    },
+    "style_prop.mpConvPointer.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "7cf17db0a42d257498f2ff7565db4533"
+    },
+    "style_prop.mpConvQuoteBorder.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "fd5cb0d91918c27dc933d1209412916b"
+    },
+    "style_prop.mpConvRestyleQuotes.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "264eb2a7a104741c06f70f225f3e7e73"
+    },
+    "style_prop.mpConvRestyleReactions.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "42c24b27566adf83605653f09bda0057"
+    },
+    "style_prop.mpConvRestyleSidebar.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "a89415e1e00e75844b87328de6d32d4e"
+    },
+    "style_prop.mpConvSelfAvatar.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "647a4d4b7f0f10a6ff4260f6279a03c7"
+    },
+    "style_prop.mpConvSelfBg.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "edb9c784ef0b77be46e786c340cebf69"
+    },
+    "style_prop.mpConvSelfSide.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "fb37a8111e538754e051eacd017ee5c7"
+    },
+    "style_prop.mpConvShowSenderName.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "0a1bba810af1d33f1641460c79141cf4"
+    },
+    "style_prop_desc.mpConvAttribution.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "cee2e6ccd77ef647989b85fa077961d4"
+    },
+    "style_prop_desc.mpConvBubbleRadius.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "0257290602831130b0b43813ef55aae0"
+    },
+    "style_prop_desc.mpConvBubbleWidth.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "3e0438d3ab6b2b74bff1b77544fc42f3"
+    },
+    "style_prop_desc.mpConvEnable.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "3bae659a953210620fb57e33ac0f6dba"
+    },
+    "style_prop_desc.mpConvHideSignatures.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "f4c109134876441ba73633cbcca0eb61"
+    },
+    "style_prop_desc.mpConvHideUserExtras.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "8dec7e384b2dc23dd950a14a79e7e465"
+    },
+    "style_prop_desc.mpConvOnline.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "be9bf12aa37a341c6b232bd95b3fd2d1"
+    },
+    "style_prop_desc.mpConvOtherBg.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "b385c8b7bb2abb4abdf2a72557758f98"
+    },
+    "style_prop_desc.mpConvPointer.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "8f11ea9cecb7eda32ed5ca3b0255ab61"
+    },
+    "style_prop_desc.mpConvQuoteBorder.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "7d3aca43625ba0960bcbcc477913759f"
+    },
+    "style_prop_desc.mpConvRestyleQuotes.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "9848f22ec484a673e85157cdd091bb9a"
+    },
+    "style_prop_desc.mpConvRestyleReactions.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "8a03e5f1f54191c06deb60190e025b62"
+    },
+    "style_prop_desc.mpConvRestyleSidebar.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "691954bb1d2d7521f141808a765612c6"
+    },
+    "style_prop_desc.mpConvSelfAvatar.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "d2cb70c11b584de37751cc61b05701e6"
+    },
+    "style_prop_desc.mpConvSelfBg.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "06b41d5658663c52d84269301227eabd"
+    },
+    "style_prop_desc.mpConvSelfSide.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "f5cbcb3dab2a519df3ff039d776dcc4e"
+    },
+    "style_prop_desc.mpConvShowSenderName.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "5684098b2f5fe7062cb8eb8c28227d0c"
+    },
+    "style_prop_group.mpMessengerConv.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "c640f0ce857ee91fba9688dd12bb854a"
+    },
+    "style_prop_group_desc.mpMessengerConv.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "de631767b540f5c7f7d35611e27bce6f"
+    }
+}

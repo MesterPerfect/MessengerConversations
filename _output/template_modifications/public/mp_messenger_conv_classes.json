@@ -1,0 +1,9 @@
+{
+    "template": "conversation_message_macros",
+    "description": "Add CSS classes and stylesheet for conversation messages",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<article class=\"message message--conversationMessage {{ $message.isIgnored() ? ' is-ignored' : '' }} {{ $message.isUnread($lastRead) ? 'is-unread' : '' }} js-message\" data-author=\"{{ $message.User.username ?: $message.username }}\">",
+    "replace": "<xf:css src=\"mp_messenger_conv.less\" />\n<article class=\"message message--conversationMessage {{ $message.isIgnored() ? ' is-ignored' : '' }} {{ $message.isUnread($lastRead) ? 'is-unread' : '' }} {{ $message.user_id == $xf.visitor.user_id ? 'mp-conversation-message--self ctaConversationMessageSelf' : 'mp-conversation-message--other ctaConversationMessageOther' }} js-message\" data-author=\"{{ $message.User.username ?: $message.username }}\">"
+}

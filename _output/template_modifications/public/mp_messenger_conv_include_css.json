@@ -1,0 +1,9 @@
+{
+    "template": "conversation_view",
+    "description": "Include Messenger Conversations LESS styling",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<xf:title page=\"{$page}\">{$conversation.title}</xf:title>",
+    "replace": "<xf:css src=\"mp_messenger_conv.less\" />\n<xf:title page=\"{$page}\">{$conversation.title}</xf:title>"
+}

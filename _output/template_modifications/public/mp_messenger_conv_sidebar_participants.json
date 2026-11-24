@@ -1,0 +1,9 @@
+{
+    "template": "conversation_view",
+    "description": "Add styling class to direct message participants widget",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "\t<div class=\"block\">\n\t\t<div class=\"block-container\">\n\t\t\t<h3 class=\"block-minorHeader\">{{ phrase('direct_message_participants') }}</h3>",
+    "replace": "\t<div class=\"block mp-conversation-participants ctaConversationParticipants\">\n\t\t<div class=\"block-container\">\n\t\t\t<h3 class=\"block-minorHeader\">{{ phrase('direct_message_participants') }}</h3>"
+}

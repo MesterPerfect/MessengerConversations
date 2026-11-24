@@ -1,0 +1,155 @@
+// ============================================================================
+// Messenger Conversations - Sidebar Cards
+// Developed by: AhmedBakr (MesterPerfect) - https://tecwindow.net
+// ============================================================================
+
+<xf:if is="property('mpConvRestyleSidebar')">
+[data-template="conversation_view"]
+{
+	// --------------------------------------------------------------------------
+	// Shared card appearance for sidebar widgets
+	// --------------------------------------------------------------------------
+	.mp-conversation-info,
+	.ctaConversationInfo,
+	.mp-conversation-participants,
+	.ctaConversationParticipants
+	{
+		.block-container
+		{
+			background: @xf-contentBg;
+			border: 1px solid @xf-borderColor;
+			border-radius: 12px;
+			overflow: hidden;
+			box-shadow: none;
+		}
+
+		.block-minorHeader
+		{
+			background: transparent;
+			border-bottom: 1px solid @xf-borderColorLight;
+			padding: 12px 14px;
+			font-size: 14px;
+			font-weight: 600;
+		}
+	}
+
+	// --------------------------------------------------------------------------
+	// Direct message info widget
+	// --------------------------------------------------------------------------
+	.mp-conversation-info,
+	.ctaConversationInfo
+	{
+		.block-body
+		{
+			padding: 10px 14px;
+		}
+
+		.pairs--justified
+		{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 10px;
+			margin: 0;
+			padding: 9px 0;
+			border-bottom: 1px solid @xf-borderColorLight;
+
+			&:last-child
+			{
+				border-bottom: none;
+			}
+
+			dt
+			{
+				color: @xf-textColorMuted;
+				font-size: 12px;
+			}
+
+			dd
+			{
+				font-size: 13px;
+				font-weight: 600;
+				text-align: end;
+			}
+		}
+	}
+
+	// --------------------------------------------------------------------------
+	// Direct message participants widget
+	// --------------------------------------------------------------------------
+	.mp-conversation-participants,
+	.ctaConversationParticipants
+	{
+		.block-body
+		{
+			padding: 5px 8px;
+		}
+
+		ol
+		{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.block-row
+		{
+			padding: 6px 8px;
+			border-radius: 8px;
+			border-bottom: none;
+			background: transparent;
+			transition: background 0.15s ease;
+
+			&:hover
+			{
+				background: @xf-contentHighlightBg;
+			}
+		}
+
+		.contentRow
+		{
+			align-items: center;
+			gap: 10px;
+		}
+
+		.contentRow-figure
+		{
+			flex: 0 0 36px;
+
+			.avatar
+			{
+				width: 36px;
+				height: 36px;
+			}
+		}
+
+		.contentRow-main
+		{
+			font-size: 13px;
+			font-weight: 600;
+			min-width: 0;
+		}
+
+		// Hide member titles beneath usernames
+		.contentRow-minor
+		{
+			display: none;
+		}
+
+		// Footer action (Invite more)
+		.block-footer
+		{
+			background: transparent;
+			border-top: 1px solid @xf-borderColorLight;
+			padding: 10px 14px;
+		}
+
+		.block-footer-controls a
+		{
+			color: @xf-linkColor;
+			font-size: 12px;
+			font-weight: 600;
+		}
+	}
+}
+</xf:if>

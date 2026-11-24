@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="public" title="mp_messenger_conv.less" version_id="1000070" version_string="1.0.0"><![CDATA[// ============================================================================
+// Messenger Conversations for XenForo 2.3+
+// Developed by: AhmedBakr (MesterPerfect) - https://tecwindow.net
+// All rights reserved.
+// ============================================================================
+
+<xf:if is="property('mpConvEnable')">
+	{{ include('mp_messenger_conv_bubbles.less') }}
+	{{ include('mp_messenger_conv_content.less') }}
+	{{ include('mp_messenger_conv_sidebar.less') }}
+</xf:if>
+]]></template>
+  <template type="public" title="mp_messenger_conv_bubbles.less" version_id="1000070" version_string="1.0.0"><![CDATA[// ============================================================================
+// Messenger Conversations - Message Bubbles & Layout
+// Developed by: AhmedBakr (MesterPerfect) - https://tecwindow.net
+// ============================================================================
+
+[data-template="conversation_view"]
+{
+	.block
+	{
+		.message
+		{
+			border-radius: @xf-mpConvBubbleRadius;
+
+			// Bubble width & spacing
+			&--conversationMessage
+			{
+				width: @xf-mpConvBubbleWidth;
+				margin-bottom: 12px;
+			}
+
+			// User cell column
+			&-cell--user
+			{
+				visibility: hidden;
+				border: none;
+				flex: 0 0 118px;
+			}
+
+			// Avatar container
+			&-avatar
+			{
+				visibility: visible;
+
+				&-wrapper
+				{
+					margin-bottom: 0;
+				}
+
+				<xf:if is="!property('mpConvOnline')">
+					&-online
+					{
+						display: none;
+					}
+				</xf:if>
+			}
+
+			// Hide user extras & message arrow
+			&-userExtras,
+			&-userArrow
+			{
+				display: none;
+			}
+
+			// Quick reply inherits bubble rounded corners
+			&--quickReply
+			{
+				border-radius: inherit;
+			}
+
+			// Date/time attribution & unread indicator
+			&-attribution
+			{
+				<xf:if is="!property('mpConvAttribution')">
+					display: none;
+				</xf:if>
+
+				border: none;
+
+				&-main
+				{
+					float: right;
+					margin-left: 4px;
+				}
+			}
+
+			// Message body margin reset
+			&-body
+			{
+				margin: 0;
+			}
+
+			// Own messages background
+			&.mp-conversation-message--self,
+			&.ctaConversationMessageSelf
+			{
+				background: @xf-mpConvSelfBg;
+
+				<xf:if is="!property('mpConvSelfAvatar')">
+					& .message-cell--user
+					{
+						display: none;
+					}
+				</xf:if>
+			}
+
+			// Other participants messages background
+			&.mp-conversation-message--other,
+			&.ctaConversationMessageOther
+			{
+				background: @xf-mpConvOtherBg;
+			}
+
+			// Mobile & tablet responsive styling
+			@media (max-width: @xf-responsiveMedium)
+			{
+				border-right: 1px solid @xf-borderColor;
+				border-left: 1px solid @xf-borderColor;
+
+				&-cell--user
+				{
+					padding-bottom: 0;
+				}
+
+				&-avatar .avatar
+				{
+					width: 32px;
+					height: 32px;
+					font-size: 20px;
+				}
+			}
+
+			// --------------------------------------------------------------
+			// Message alignment & bubble pointer
+			// --------------------------------------------------------------
+			<xf:if is="property('mpConvSelfSide') == 'right'">
+
+				// Own messages aligned to right
+				&.mp-conversation-message--self,
+				&.ctaConversationMessageSelf,
+				&--quickReply
+				{
+					margin-left: (100% - @xf-mpConvBubbleWidth);
+
+					& .message-inner
+					{
+						flex-direction: row-reverse;
+					}
+				}
+
+				&--quickReply
+				{
+					margin-left: 0;
+				}
+
+				@media (max-width: @xf-responsiveMedium)
+				{
+					&.mp-conversation-message--self,
+					&.ctaConversationMessageSelf,
+					&--quickReply
+					{
+						& .message-user
+						{
+							flex-direction: row-reverse;
+						}
+					}
+
+					&.mp-conversation-message--other .message-attribution-main,
+					&.ctaConversationMessageOther .message-attribution-main
+					{
+						float: left;
+						margin-left: 0;
+					}
+				}
+
+				// Pointer styling for right-aligned self
+				<xf:if is="property('mpConvPointer') == 'top'">
+					&.mp-conversation-message--self,
+					&.ctaConversationMessageSelf
+					{
+						border-top-right-radius: 0;
+					}
+
+					&.mp-conversation-message--other,
+					&.ctaConversationMessageOther
+					{
+						border-top-left-radius: 0;
+					}
+				<xf:elseif is="property('mpConvPointer') == 'bottom'" />
+					&.mp-conversation-message--self,
+					&.ctaConversationMessageSelf
+					{
+						border-bottom-right-radius: 0;
+					}
+
+					&.mp-conversation-message--other,
+					&.ctaConversationMessageOther
+					{
+						border-bottom-left-radius: 0;
+					}
+				</xf:if>
+
+			<xf:else />
+
+				// Own messages on left / Other participants on right
+				&.mp-conversation-message--other,
+				&.ctaConversationMessageOther
+				{
+					margin-left: (100% - @xf-mpConvBubbleWidth);
+
+					& .message-inner
+					{
+						flex-direction: row-reverse;
+					}
+				}
+
+				@media (max-width: @xf-responsiveMedium)
+				{
+					&.mp-conversation-message--self .message-attribution-main,
+					&.ctaConversationMessageSelf .message-attribution-main
+					{
+						float: left;
+						margin-left: 0;
+					}
+
+					&.mp-conversation-message--other .message-user,
+					&.ctaConversationMessageOther .message-user
+					{
+						flex-direction: row-reverse;
+					}
+				}
+
+				// Pointer styling for left-aligned self
+				<xf:if is="property('mpConvPointer') == 'top'">
+					&.mp-conversation-message--self,
+					&.ctaConversationMessageSelf
+					{
+						border-top-left-radius: 0;
+					}
+
+					&.mp-conversation-message--other,
+					&.ctaConversationMessageOther
+					{
+						border-top-right-radius: 0;
+					}
+				<xf:elseif is="property('mpConvPointer') == 'bottom'" />
+					&.mp-conversation-message--self,
+					&.ctaConversationMessageSelf
+					{
+						border-bottom-left-radius: 0;
+					}
+
+					&.mp-conversation-message--other,
+					&.ctaConversationMessageOther
+					{
+						border-bottom-right-radius: 0;
+					}
+				</xf:if>
+
+			</xf:if>
+		}
+	}
+}
+]]></template>
+  <template type="public" title="mp_messenger_conv_content.less" version_id="1000070" version_string="1.0.0"><![CDATA[// ============================================================================
+// Messenger Conversations - Content & Message Elements
+// Developed by: AhmedBakr (MesterPerfect) - https://tecwindow.net
+// ============================================================================
+
+[data-template="conversation_view"]
+{
+	// --------------------------------------------------------------------------
+	// Sender identity: show username below avatar
+	// --------------------------------------------------------------------------
+	<xf:if is="property('mpConvShowSenderName')">
+		.message-userDetails
+		{
+			display: block;
+			visibility: visible;
+			text-align: center;
+			margin-top: 5px;
+
+			.message-name
+			{
+				font-size: 12px;
+				font-weight: 600;
+				line-height: 1.5;
+				margin: 0;
+			}
+		}
+	</xf:if>
+
+	// --------------------------------------------------------------------------
+	// Hide user titles and user banners
+	// --------------------------------------------------------------------------
+	<xf:if is="property('mpConvHideUserExtras')">
+		.message-userTitle,
+		.message-userBanner
+		{
+			display: none !important;
+		}
+	</xf:if>
+
+	// --------------------------------------------------------------------------
+	// Hide message signatures
+	// --------------------------------------------------------------------------
+	<xf:if is="property('mpConvHideSignatures')">
+		.message-signature
+		{
+			display: none !important;
+		}
+	</xf:if>
+
+	// --------------------------------------------------------------------------
+	// Restyled compact reactions bar
+	// --------------------------------------------------------------------------
+	<xf:if is="property('mpConvRestyleReactions')">
+		.reactionsBar
+		{
+			display: inline-flex;
+			width: fit-content;
+			max-width: 100%;
+			margin-top: 8px;
+			padding: 4px 10px;
+			border: 1px solid @xf-borderColor;
+			border-radius: 8px;
+			background: @xf-contentAltBg;
+			box-sizing: border-box;
+		}
+	</xf:if>
+
+	// --------------------------------------------------------------------------
+	// Restyled quote blocks
+	// --------------------------------------------------------------------------
+	<xf:if is="property('mpConvRestyleQuotes')">
+		.bbCodeBlock--quote
+		{
+			background: @xf-contentAltBg;
+			border: 0;
+			border-right: 3px solid @xf-mpConvQuoteBorder;
+			border-radius: 8px;
+			overflow: hidden;
+			margin: 8px 0;
+
+			.bbCodeBlock-title
+			{
+				background: transparent;
+				border: 0;
+				color: @xf-textColorMuted;
+				padding: 6px 10px;
+			}
+
+			.bbCodeBlock-content
+			{
+				background: transparent;
+				border: 0;
+				padding: 8px 10px;
+			}
+		}
+
+		// Direction support: border-left on LTR, border-right on RTL
+		html[dir="ltr"] & .bbCodeBlock--quote
+		{
+			border-right: 0;
+			border-left: 3px solid @xf-mpConvQuoteBorder;
+		}
+	</xf:if>
+}
+]]></template>
+  <template type="public" title="mp_messenger_conv_sidebar.less" version_id="1000070" version_string="1.0.0"><![CDATA[// ============================================================================
+// Messenger Conversations - Sidebar Cards
+// Developed by: AhmedBakr (MesterPerfect) - https://tecwindow.net
+// ============================================================================
+
+<xf:if is="property('mpConvRestyleSidebar')">
+[data-template="conversation_view"]
+{
+	// --------------------------------------------------------------------------
+	// Shared card appearance for sidebar widgets
+	// --------------------------------------------------------------------------
+	.mp-conversation-info,
+	.ctaConversationInfo,
+	.mp-conversation-participants,
+	.ctaConversationParticipants
+	{
+		.block-container
+		{
+			background: @xf-contentBg;
+			border: 1px solid @xf-borderColor;
+			border-radius: 12px;
+			overflow: hidden;
+			box-shadow: none;
+		}
+
+		.block-minorHeader
+		{
+			background: transparent;
+			border-bottom: 1px solid @xf-borderColorLight;
+			padding: 12px 14px;
+			font-size: 14px;
+			font-weight: 600;
+		}
+	}
+
+	// --------------------------------------------------------------------------
+	// Direct message info widget
+	// --------------------------------------------------------------------------
+	.mp-conversation-info,
+	.ctaConversationInfo
+	{
+		.block-body
+		{
+			padding: 10px 14px;
+		}
+
+		.pairs--justified
+		{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 10px;
+			margin: 0;
+			padding: 9px 0;
+			border-bottom: 1px solid @xf-borderColorLight;
+
+			&:last-child
+			{
+				border-bottom: none;
+			}
+
+			dt
+			{
+				color: @xf-textColorMuted;
+				font-size: 12px;
+			}
+
+			dd
+			{
+				font-size: 13px;
+				font-weight: 600;
+				text-align: end;
+			}
+		}
+	}
+
+	// --------------------------------------------------------------------------
+	// Direct message participants widget
+	// --------------------------------------------------------------------------
+	.mp-conversation-participants,
+	.ctaConversationParticipants
+	{
+		.block-body
+		{
+			padding: 5px 8px;
+		}
+
+		ol
+		{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.block-row
+		{
+			padding: 6px 8px;
+			border-radius: 8px;
+			border-bottom: none;
+			background: transparent;
+			transition: background 0.15s ease;
+
+			&:hover
+			{
+				background: @xf-contentHighlightBg;
+			}
+		}
+
+		.contentRow
+		{
+			align-items: center;
+			gap: 10px;
+		}
+
+		.contentRow-figure
+		{
+			flex: 0 0 36px;
+
+			.avatar
+			{
+				width: 36px;
+				height: 36px;
+			}
+		}
+
+		.contentRow-main
+		{
+			font-size: 13px;
+			font-weight: 600;
+			min-width: 0;
+		}
+
+		// Hide member titles beneath usernames
+		.contentRow-minor
+		{
+			display: none;
+		}
+
+		// Footer action (Invite more)
+		.block-footer
+		{
+			background: transparent;
+			border-top: 1px solid @xf-borderColorLight;
+			padding: 10px 14px;
+		}
+
+		.block-footer-controls a
+		{
+			color: @xf-linkColor;
+			font-size: 12px;
+			font-weight: 600;
+		}
+	}
+}
+</xf:if>
+]]></template>
+</templates>

@@ -1,0 +1,22 @@
+{
+    "public/mp_messenger_conv.less": {
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "e7beb1e994e51079380ff0897d380a60"
+    },
+    "public/mp_messenger_conv_bubbles.less": {
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "e8058e4568d2629b602c9562e6534dff"
+    },
+    "public/mp_messenger_conv_content.less": {
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "a7572b4cf7eef28f4a4c93c500d37e9f"
+    },
+    "public/mp_messenger_conv_sidebar.less": {
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "e8d41dbbc6aa3d2a987cb22ef7a56ad2"
+    }
+}

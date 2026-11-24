@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="style_prop.mpConvAttribution" version_id="1000070" version_string="1.0.0"><![CDATA[إظهار وقت وتاريخ الرسالة]]></phrase>
+  <phrase title="style_prop.mpConvBubbleRadius" version_id="1000070" version_string="1.0.0"><![CDATA[استدارة زوايا فقاعات الرسائل]]></phrase>
+  <phrase title="style_prop.mpConvBubbleWidth" version_id="1000070" version_string="1.0.0"><![CDATA[عرض فقاعة الرسالة]]></phrase>
+  <phrase title="style_prop.mpConvEnable" version_id="1000070" version_string="1.0.0"><![CDATA[تفعيل تصميم ماسنجر للمحادثات]]></phrase>
+  <phrase title="style_prop.mpConvHideSignatures" version_id="1000070" version_string="1.0.0"><![CDATA[إخفاء التواقيع]]></phrase>
+  <phrase title="style_prop.mpConvHideUserExtras" version_id="1000070" version_string="1.0.0"><![CDATA[إخفاء الرتب والشارات]]></phrase>
+  <phrase title="style_prop.mpConvOnline" version_id="1000070" version_string="1.0.0"><![CDATA[إظهار مؤشر الاتصال]]></phrase>
+  <phrase title="style_prop.mpConvOtherBg" version_id="1000070" version_string="1.0.0"><![CDATA[لون خلفية رسائل المشاركين الآخرين]]></phrase>
+  <phrase title="style_prop.mpConvPointer" version_id="1000070" version_string="1.0.0"><![CDATA[موضع زاوية فقاعة الرسالة]]></phrase>
+  <phrase title="style_prop.mpConvQuoteBorder" version_id="1000070" version_string="1.0.0"><![CDATA[لون الحد الجانبي للاقتباس]]></phrase>
+  <phrase title="style_prop.mpConvRestyleQuotes" version_id="1000070" version_string="1.0.0"><![CDATA[تخصيص شكل الاقتباسات]]></phrase>
+  <phrase title="style_prop.mpConvRestyleReactions" version_id="1000070" version_string="1.0.0"><![CDATA[تحسين شكل التفاعلات]]></phrase>
+  <phrase title="style_prop.mpConvRestyleSidebar" version_id="1000070" version_string="1.0.0"><![CDATA[تخصيص ويدجات الشريط الجانبي]]></phrase>
+  <phrase title="style_prop.mpConvSelfAvatar" version_id="1000070" version_string="1.0.0"><![CDATA[إظهار صورتك الشخصية]]></phrase>
+  <phrase title="style_prop.mpConvSelfBg" version_id="1000070" version_string="1.0.0"><![CDATA[لون خلفية رسائلك]]></phrase>
+  <phrase title="style_prop.mpConvSelfSide" version_id="1000070" version_string="1.0.0"><![CDATA[جهة ظهور رسائلك]]></phrase>
+  <phrase title="style_prop.mpConvShowSenderName" version_id="1000070" version_string="1.0.0"><![CDATA[إظهار اسم صاحب الرسالة]]></phrase>
+  <phrase title="style_prop_desc.mpConvAttribution" version_id="1000070" version_string="1.0.0"><![CDATA[إظهار أو إخفاء معلومات التاريخ والوقت ومؤشر [جديد].]]></phrase>
+  <phrase title="style_prop_desc.mpConvBubbleRadius" version_id="1000070" version_string="1.0.0"><![CDATA[درجة استدارة زوايا فقاعات الرسائل (مثال: 25px).]]></phrase>
+  <phrase title="style_prop_desc.mpConvBubbleWidth" version_id="1000070" version_string="1.0.0"><![CDATA[الحد الأقصى لعرض فقاعة الرسالة (مثال: 80%).]]></phrase>
+  <phrase title="style_prop_desc.mpConvEnable" version_id="1000070" version_string="1.0.0"><![CDATA[تفعيل أو تعطيل تصميم الفقاعات وتنسيقات ماسنجر للمحادثات الخاصة.]]></phrase>
+  <phrase title="style_prop_desc.mpConvHideSignatures" version_id="1000070" version_string="1.0.0"><![CDATA[إخفاء تواقيع الأعضاء داخل المحادثات الخاصة فقط.]]></phrase>
+  <phrase title="style_prop_desc.mpConvHideUserExtras" version_id="1000070" version_string="1.0.0"><![CDATA[إخفاء الرتب الإدارية والشارات (Admin/Mod) من رسائل المحادثة لمنع الازدحام.]]></phrase>
+  <phrase title="style_prop_desc.mpConvOnline" version_id="1000070" version_string="1.0.0"><![CDATA[إظهار أو إخفاء نقطة مؤشر الاتصال بالإنترنت على الصور الشخصية.]]></phrase>
+  <phrase title="style_prop_desc.mpConvOtherBg" version_id="1000070" version_string="1.0.0"><![CDATA[لون خلفية فقاعة رسائل بقية المشاركين (يدعم الوضع الفاتح والداكن تلقائيًا).]]></phrase>
+  <phrase title="style_prop_desc.mpConvPointer" version_id="1000070" version_string="1.0.0"><![CDATA[تحديد موضع السهم/الزاوية لفقاعات الرسائل (أعلى، أسفل، أو بدون زاوية).]]></phrase>
+  <phrase title="style_prop_desc.mpConvQuoteBorder" version_id="1000070" version_string="1.0.0"><![CDATA[لون الشريط الجانبي للاقتباسات داخل المحادثة.]]></phrase>
+  <phrase title="style_prop_desc.mpConvRestyleQuotes" version_id="1000070" version_string="1.0.0"><![CDATA[تخصيص الاقتباسات لتتناسب مع ألوان فقاعات الرسائل وخلفية المحادثة.]]></phrase>
+  <phrase title="style_prop_desc.mpConvRestyleReactions" version_id="1000070" version_string="1.0.0"><![CDATA[عرض شريط التفاعلات بحجم مدمج وأنيق وزوايا دائرية بدلاً من الشريط العريض.]]></phrase>
+  <phrase title="style_prop_desc.mpConvRestyleSidebar" version_id="1000070" version_string="1.0.0"><![CDATA[إعادة تصميم ويدجت معلومات المحادثة وويدجت المشاركين كبطاقات عصرية.]]></phrase>
+  <phrase title="style_prop_desc.mpConvSelfAvatar" version_id="1000070" version_string="1.0.0"><![CDATA[إظهار أو إخفاء صورتك الشخصية بجانب رسائلك.]]></phrase>
+  <phrase title="style_prop_desc.mpConvSelfBg" version_id="1000070" version_string="1.0.0"><![CDATA[لون خلفية فقاعة رسائلك (يدعم الوضع الفاتح والداكن تلقائيًا).]]></phrase>
+  <phrase title="style_prop_desc.mpConvSelfSide" version_id="1000070" version_string="1.0.0"><![CDATA[تحديد جهة ظهور الرسائل الخاصة بك (يسار أو يمين).]]></phrase>
+  <phrase title="style_prop_desc.mpConvShowSenderName" version_id="1000070" version_string="1.0.0"><![CDATA[إظهار اسم المستخدم تحت الصورة الشخصية (مهم خصوصًا في المحادثات الجماعية).]]></phrase>
+  <phrase title="style_prop_group.mpMessengerConv" version_id="1000070" version_string="1.0.0"><![CDATA[[MesterPerfect] محادثات ماسنجر]]></phrase>
+  <phrase title="style_prop_group_desc.mpMessengerConv" version_id="1000070" version_string="1.0.0"><![CDATA[إعدادات وتنسيقات تحويل المحادثات الخاصة إلى شكل تطبيقات المراسلة Messenger.]]></phrase>
+</phrases>

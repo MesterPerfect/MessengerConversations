@@ -1,0 +1,21 @@
+{
+    "legacy_addon_id": "",
+    "title": "محادثات ماسنجر | Messenger Conversations",
+    "description": "تحويل شكل المحادثات الخاصة إلى تصميم شبيه بتطبيقات المراسلة الشهيرة مثل Messenger و WhatsApp مع تحكم كامل من خلال إعدادات الستايل.",
+    "version_id": 1000070,
+    "version_string": "1.0.0",
+    "dev": "AhmedBakr MesterPerfect",
+    "dev_url": "https://tecwindow.net",
+    "faq_url": "https://github.com/MesterPerfect/MessengerConversations#faq",
+    "support_url": "https://github.com/MesterPerfect/MessengerConversations/issues",
+    "extra_urls": {
+        "GitHub": "https://github.com/MesterPerfect/MessengerConversations"
+    },
+    "require": {
+        "XF": [
+            2030000,
+            "XenForo 2.3.0+"
+        ]
+    },
+    "icon": "icon.png"
+}
